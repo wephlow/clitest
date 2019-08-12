@@ -1,0 +1,26 @@
+{
+  "name": "grace/clitest",
+  "description": "Test for CLI application composed by a dispatcher and a worker",
+  "version": "0.1.0",
+  "homepage": "https://phlow.com",
+  "time": "2019-08-12",
+  "authors": [
+    {
+      "name": "Carlo Nicora",
+      "email": "carlo@phlow.com",
+      "homepage": "http://phlow.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "carlonicora/minimalism": ">3.2",
+    "carlonicora/minimalism-library": "*",
+    "php-amqplib/php-amqplib": ">=2.6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "grace\\clitest\\": "app/"
+    }
+  }
+}
