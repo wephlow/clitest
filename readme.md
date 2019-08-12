@@ -125,10 +125,14 @@ Please note that you must run this in **debug mode**, creating a breakpoint at t
 
 There are three bugs in the code. I want you to understand which ones they are and correct them. After having corrected it I want you to truncate the two tables in the database, re-add the original data in `actions` and run the code again.
 
-### 3 - Add a new series of actions and run again
+### 3 - How would you run a server
+
+Please propose a solution working on a *nix server to make sure that the system works, by launching a dispatcher every x minutes and having a minimum of 10 workers always running as a service.
+
+### 4 - Add a new series of actions and run again
 
 Add 10 additional `actions` and run the code to make sure that these 10 additional values are kept into consideration in the final calculation. Please make sure that you use both new names as well as existing ones.
 
-### 4 - Bonus
+### 5 - Bonus
 
 Describe a good method to test the system in the long run with thousands of actions, how to automate the process and evaluate the results.
