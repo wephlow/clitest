@@ -106,7 +106,7 @@ RABBITMQ_CONNECTION="HOST,PORT,USER,PASSWORD"
 
 The `dispatcher` reads the `actions` from the database, dispatches them to the queue manager and marks them as analysed, so that they are not taken into consideration any longer.
 
-The `worker` received the actions and either creates a new `names` or updates it if already existing. It should make sure that in the `name` the two fields (`totalValue` and `averageValue`) contains the correct data (sum of all the value in the previous actions sent, and average value of the values sent in all the actions).
+The `worker` received the actions and either creates a new `names` or updates it if already existing. It should make sure that in the `name` the two fields (`totalValue` and `averageValue`) contains the correct data (sum of all the value in the previous actions sent, and average value is the average of the previous value and the value passed by the action).
  
 ## The test
 
